@@ -102,6 +102,12 @@ module.exports = {
   deletePost: async (req, res) => {
     try {
       const post = await Post.findById(req.params.id);
+      if (!post) return res.redirect("/profile");
+
+      // Only the author can delete their post
+      if (!post.user.equals(req.user.id)) {
+        return res.redirect(`/post/${post._id}`);
+      }
       await cloudinary.uploader.destroy(post.cloudinaryId);
       // Clean up the post's comments too, so none are left orphaned
       await Comment.deleteMany({ post: req.params.id });
