@@ -4,6 +4,10 @@ A full-stack photo-sharing social network. Users sign up, upload photos with a t
 
 Built with Node.js, Express, MongoDB, Passport, Cloudinary, and EJS, following the MVC pattern. It started from the 100Devs social network starter, and I added the comment system and profile pictures.
 
+🔗 **Live Demo:** [binary-upload-boom-d3di.onrender.com](https://binary-upload-boom-d3di.onrender.com)
+
+![alt text](image.png)
+
 ---
 
 ## ✨ Features
@@ -178,7 +182,7 @@ Started from the [100Devs](https://100devs.org/) social network starter (MIT Lic
 
 ---
 
-## 👩‍💻 Created By
+## 👩‍💻 Created BY
 
 **Kareemah Bahaadur**
 [GitHub](https://github.com/kareemahb)
